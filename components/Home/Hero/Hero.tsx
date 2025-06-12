@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -22,7 +23,9 @@ const Hero = () => {
                 </a>
             </div>
             {/* Image Content */}
-            <div></div>
+            <div className='mx-auto hidden xl:block'>
+                <Image src='/images/hero.png' alt='hero' width={900} height={900} />
+            </div>
         </div>
     </div>
   )
